@@ -6,7 +6,6 @@
 .weather-app {
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 500px;
 }
 
 .search-form {
@@ -39,21 +38,18 @@ li {
   list-style: none;
 }
 
-.wind-info-container {
-  margin: 150px 0;
-}
-
 .wind-info {
-  padding-top: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  width: 200px;
-  height: 95px;
+  margin-left: 780px;
+  position: relative;
+  bottom: 95px;
 }
 
-.weekday {
-  border: 2px solid rgba(255, 154, 60, 0.8);
-  border-radius: 10px;
-  position: relative;
-  bottom: 240px;
-  left: 400px;
+.weather-forcast {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #feffdf;
+  text-align: center;
+  width: 800px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 20px;
 }
