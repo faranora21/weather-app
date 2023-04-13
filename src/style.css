@@ -6,6 +6,7 @@
 .weather-app {
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: linear-gradient(-20deg, #ffcab0 0%, rgb(251, 252, 219) 100%);
 }
 
 .search-form {
@@ -15,11 +16,17 @@
 .search-button {
   position: relative;
   bottom: 37px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: beige;
 }
 
 .current-button {
   position: relative;
   bottom: 37px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: beige;
 }
 
 .current-time {
@@ -28,25 +35,55 @@
 
 h2 {
   margin-top: 20px;
+  font-size: 35px;
 }
 
 .temp {
   margin: 0 auto;
 }
 
+#todayTime {
+  font-size: 28px;
+}
+
 li {
   list-style: none;
+}
+
+.cels {
+  font-size: 28px;
+}
+
+#cel {
+  font-size: 25px;
+}
+
+.fare {
+  font-size: 28px;
+}
+
+.divider {
+  font-size: 25px;
+}
+
+#far {
+  font-size: 25px;
+}
+
+#description {
+  text-transform: capitalize;
 }
 
 .wind-info {
   margin-left: 780px;
   position: relative;
-  bottom: 95px;
+  bottom: 150px;
+  font-size: 19px;
 }
 
 .weather-forcast {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #feffdf;
+  background-color: #ffecd2;
   text-align: center;
   width: 800px;
   height: 150px;
