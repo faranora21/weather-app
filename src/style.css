@@ -1,0 +1,40 @@
+.weather-app-wrap {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 500px;
+}
+
+.search-form {
+  text-align: right;
+}
+
+.current-time {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.temp {
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+.wind-info-container {
+  margin: 150px 0;
+}
+.wind-info {
+  padding-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 200px;
+  height: 95px;
+}

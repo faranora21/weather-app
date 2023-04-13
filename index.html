@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Plus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrap">
+        <div class="weather-app">
+          <form class="search-form" id="searchForm">
+            <div>
+              <div class="input-group rounded">
+               <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                 <i class="bi bi-search"></i>
+                   </div>
+              <button class="current-button" style="width: 100px">
+                Current
+              </button>
+            </div>
+          </form>
+           <div class="col">
+            <div class="current-time"> 
+                <h2 id="city">Johor Bahru</h2>
+                <img src="" alt="Clear" id="icon" />
+              <span class="temp">
+                <span class="num cels">30</span
+                ><a href="#" id="cel" class="celcius">°C</a
+                ><a class="divider">|</a
+                ><a href="#" id="far" class="farenheit">°F</a>
+              <p id="todayTime">Saturday, 13:00</p>
+            </div>
+          </div>
+          <div class="wind-info-container">
+           <div class="col-5 wind-info">
+            <ul>
+              <li id="description">Cloudy</li>
+              <li>Humidity: <span id="humidity">17</span>%</li>
+              <li>Wind: <span id="wind">20</span>km/h</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <small
+          >Coded by Farah
+          <a
+            href="https://github.com/faranora21/vanilla-weather-app"
+            target="_blank"
+            >Open-source code
+          </a>
+          on Github
+        </small>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
