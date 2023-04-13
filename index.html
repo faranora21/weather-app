@@ -19,12 +19,21 @@
       <div class="weather-app-wrap">
         <div class="weather-app">
           <form class="search-form" id="searchForm">
-            <div>
-              <div class="input-group rounded">
-               <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                 <i class="bi bi-search"></i>
-                   </div>
-              <button class="current-button" style="width: 100px">
+          <div>
+              <input
+                type="search"
+                placeholder="Enter the City Name..."
+                class="form-control rounded-0"
+                id="searchInput"
+                style="width: 200px; margin-left: 600px;"
+              />
+              <input
+                type="submit"
+                value="🔍"
+                class="search-button"
+                style="width: 50px; height: 38px;"
+              />
+              <button class="current-button" style="width: 100px; height: 38px;">
                 Current
               </button>
             </div>
@@ -50,7 +59,24 @@
             </ul>
           </div>
           </div>
-        </div>
+           <div class="weather-forcast" id="forecast">
+            <div class="row">
+              <div class="col-2 weekday">
+                <div class="weather-forecast-date">
+                  Thu
+                </div><img
+                  src="http://openweathermap.org/img/wn/${
+                    forecastDay.weather[0].icon
+                  }@2x.png"
+                  alt=""
+                  width="42"
+                />
+                <div class="weather-forecast-temperatures">
+                 <span class="weather-forecast-temperature-max">8°</span>
+                 <span class="weather-forecast-temperature-min">8°</span>
+              </div>
+            </div>
+           </div>
         <small
           >Coded by Farah
           <a
@@ -60,6 +86,7 @@
           </a>
           on Github
         </small>
+         </div>
       </div>
     </div>
     <script src="src/app.js"></script>
